@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>서울 경기 인천 천안 아산 지역 이용정보 | 한국미인테라피</title>
+  <meta name="description" content="서울 경기 인천 천안 아산의 세부 지역별 이용 범위와 시간대 정보를 확인할 수 있습니다. 원하는 지역을 선택해 위치별 이용정보와 관리 코스를 살펴볼 수 있는 한국미인테라피입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서울 경기 인천 천안 아산 지역 이용정보 | 한국미인테라피">
+  <meta property="og:description" content="서울 경기 인천 천안 아산의 세부 지역별 이용 범위와 시간대 정보를 확인할 수 있습니다. 원하는 지역을 선택해 위치별 이용정보와 관리 코스를 살펴볼 수 있는 한국미인테라피입니다.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <style>
+    :root{
+      --paper:#fbf7ef;
+      --paper2:#f5ede1;
+      --ink:#2c2926;
+      --wine:#7d1830;
+      --wine2:#991f3d;
+      --gold:#c9a05d;
+      --line:#dfc99f;
+      --muted:#746b62;
+      --white:#fffdf8;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;color:var(--ink);
+      background:
+        radial-gradient(circle at 20% 15%,rgba(201,160,93,.07),transparent 28%),
+        linear-gradient(180deg,var(--paper),#fffaf2 48%,var(--paper2));
+      font-family:"Noto Sans KR","Malgun Gothic",sans-serif;
+    }
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+    .topbar{border-bottom:1px solid rgba(201,160,93,.35);background:rgba(255,253,248,.94);backdrop-filter:blur(10px);position:sticky;top:0;z-index:20}
+    .nav{height:82px;display:flex;align-items:center;gap:34px}
+    .brand{display:flex;align-items:center;gap:13px;margin-right:auto}
+    .seal{width:45px;height:45px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--wine);font-weight:900;font-family:serif}
+    .brand strong{font-family:Georgia,"Times New Roman","Batang",serif;font-size:25px;font-weight:700;letter-spacing:-1px}
+    .navlinks{display:flex;gap:28px;font-size:14px;font-weight:700}
+    .navlinks a{position:relative;padding:31px 0 25px}
+    .navlinks a:first-child{color:var(--wine)}
+    .navlinks a:first-child:after{content:"";position:absolute;left:0;right:0;bottom:17px;height:2px;background:var(--wine)}
+    .topcall{background:var(--wine);color:#fff;padding:12px 19px;border-radius:999px;font-weight:800;font-size:14px}
+    .hero{overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;min-height:560px}
+    .hero-copy{position:relative;padding:82px 70px 70px 24px;display:flex;flex-direction:column;justify-content:center}
+    .hero-copy:before{content:"";position:absolute;left:-70px;top:28px;width:250px;height:190px;background:
+      radial-gradient(circle at 25% 30%,rgba(153,31,61,.16) 0 6px,transparent 7px),
+      radial-gradient(circle at 48% 42%,rgba(153,31,61,.12) 0 5px,transparent 6px);
+      opacity:.7}
+    .eyebrow{color:var(--wine);font-family:Georgia,"Batang",serif;font-weight:700;letter-spacing:.12em;margin-bottom:17px}
+    .eyebrow:after{content:"";display:inline-block;width:80px;height:1px;background:var(--gold);margin:0 0 4px 15px}
+    h1{font-family:Georgia,"Times New Roman","Batang",serif;font-size:58px;line-height:1.22;margin:0 0 24px;letter-spacing:-2px;font-weight:600}
+    h1 .wine{color:var(--wine)}
+    .hero-copy p{max-width:560px;line-height:1.9;color:var(--muted);font-size:16px;margin:0 0 32px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;border-radius:7px;font-weight:800;border:1px solid var(--gold)}
+    .btn.primary{background:linear-gradient(135deg,var(--wine),var(--wine2));color:#fff;border-color:var(--wine)}
+    .btn.secondary{background:rgba(255,255,255,.55);color:var(--wine)}
+    .hero-photo{position:relative;min-height:560px;overflow:hidden;border-left:1px solid rgba(201,160,93,.35)}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.88) contrast(.98) sepia(.08)}
+    .hero-photo:before{content:"";position:absolute;z-index:2;inset:0;background:linear-gradient(90deg,rgba(251,247,239,.28),transparent 25%)}
+    section.block{padding:70px 0}
+    .section-head{text-align:center;margin-bottom:34px}
+    .section-head .mini{color:var(--gold);letter-spacing:.25em;font-size:12px;font-weight:800}
+    .section-head h2{font-family:Georgia,"Batang",serif;font-size:36px;margin:10px 0 0;font-weight:600}
+    .course-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .course{background:rgba(255,253,248,.8);border:1px solid var(--line);padding:26px 24px 22px;border-radius:6px;position:relative;box-shadow:0 10px 30px rgba(92,57,27,.045)}
+    .course:before,.course:after{content:"";position:absolute;width:26px;height:26px;border-color:var(--gold)}
+    .course:before{left:7px;top:7px;border-left:1px solid;border-top:1px solid}
+    .course:after{right:7px;bottom:7px;border-right:1px solid;border-bottom:1px solid}
+    .course .icon{width:48px;height:48px;margin:0 auto 14px;border-radius:50%;background:var(--wine);color:#f7dcab;display:grid;place-items:center;font-size:21px}
+    .course h3{text-align:center;color:var(--wine);font-family:Georgia,"Batang",serif;font-size:21px;margin:0 0 17px}
+    .price{display:flex;justify-content:space-between;border-top:1px solid rgba(201,160,93,.24);padding:11px 3px 0;margin-top:10px;font-size:14px}
+    .price strong{font-size:16px}
+    .regions{background:rgba(255,255,255,.38);border-top:1px solid rgba(201,160,93,.28);border-bottom:1px solid rgba(201,160,93,.28)}
+    .region-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .region{background:var(--white);border:1px solid var(--line);padding:22px 12px;text-align:center;font-family:Georgia,"Batang",serif;font-size:20px;position:relative}
+    .region span{display:block;color:var(--gold);font-family:Arial,sans-serif;font-size:11px;letter-spacing:.12em;margin-top:7px}
+    .guide{padding:68px 0 82px}
+    .guide-box{background:linear-gradient(135deg,#f5ead7,#fffaf0);border:1px solid var(--line);display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px;padding:38px 46px;position:relative;overflow:hidden}
+    .guide-box:after{content:"";position:absolute;right:-80px;bottom:-100px;width:300px;height:220px;border-radius:50%;background:rgba(201,160,93,.10)}
+    .guide h2{font-family:Georgia,"Batang",serif;margin:0 0 10px;font-size:31px}
+    .guide p{margin:0;color:var(--muted)}
+    .bigcall{font-family:Georgia,serif;font-size:36px;color:var(--wine);font-weight:700;white-space:nowrap;position:relative;z-index:2}
+    footer{background:var(--wine);color:#f3dfc1;padding:25px 0;text-align:center;font-size:13px;letter-spacing:.08em}
+    .mobile{display:none}
+    @media(max-width:900px){
+      .navlinks{display:none}.topcall{display:none}.nav{height:68px}
+      .brand strong{font-size:21px}
+      .hero-grid{grid-template-columns:1fr}.hero-copy{padding:58px 10px 42px}.hero-photo{min-height:390px;border-left:0;border-top:1px solid var(--line)}
+      h1{font-size:43px}.course-grid{grid-template-columns:repeat(2,1fr)}.region-grid{grid-template-columns:repeat(2,1fr)}
+      .guide-box{grid-template-columns:1fr;padding:30px}.bigcall{font-size:28px}
+      .mobile{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr}
+      .mobile a{padding:15px;text-align:center;font-weight:800;background:var(--wine);color:#fff}
+      .mobile a+ a{background:#b58a4f}
+      body{padding-bottom:50px}
+    }
+    @media(max-width:560px){
+      .wrap{width:min(100% - 24px,1180px)}
+      .hero-copy{padding-top:44px}
+      h1{font-size:37px}
+      .course-grid{grid-template-columns:1fr}
+      .region-grid{grid-template-columns:1fr 1fr}
+    }
+  </style>
+<style id="fixed-contact-bar">.mobile{position:fixed!important;left:0;right:0;bottom:0;z-index:9999;display:grid!important;grid-template-columns:1fr 1fr;box-shadow:0 -3px 18px rgba(0,0,0,.15)}.mobile a{padding:16px!important;text-align:center;font-weight:800;background:#7d1830!important;color:#fff!important}.mobile a+a{background:#b58a4f!important}body{padding-bottom:54px!important}</style><link rel="canonical" href="https://seoul-hankook-massage.store/">
+<meta property="og:url" content="https://seoul-hankook-massage.store/">
+<meta property="og:image" content="https://seoul-hankook-massage.store/korean-beauty-main.png">
+<meta property="og:image:alt" content="서울 경기 인천 천안 아산 지역 이용정보 대표이미지">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1536">
+<meta property="og:image:height" content="1024">
+<style id="main-map-style">.map-box{border:1px solid #dfc99f;background:#fffdf8;padding:10px;border-radius:6px;box-shadow:0 12px 32px rgba(84,52,30,.06)}.map-box iframe{width:100%;height:360px;border:0;border-radius:4px}</style></head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="./"><span class="seal">美</span><strong>한국미인테라피</strong></a>
+      <nav class="navlinks">
+        <a href="./">홈</a><a href="#courses">코스 안내</a><a href="#regions">이용 지역</a><a href="#guide">간편 안내</a>
+      </nav>
+      <a class="topcall" href="tel:050712803355">☎ 0507-1280-3355</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">서울 · 경기 · 인천 · 천안 · 아산</div>
+          <h1><span class="wine">편안한 시간,</span><br>정돈된 케어</h1>
+          <p>지역별 이용정보와 시간대를 보기 쉽게 정리한 한국미인테라피 안내 페이지입니다. 원하는 지역과 시간을 확인하고 관리 코스를 편리하게 살펴보세요.</p>
+          <div class="actions">
+            <a class="btn primary" href="tel:050712803355">☎ 전화 0507-1280-3355</a>
+            <a class="btn secondary" href="sms:050712803355?body=한국미인테라피 보고 예약 문의합니다">문자 문의</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="korean-beauty-main.png" alt="한국미인테라피 대표 이미지" title="한국미인테라피 지역 이용 안내">
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="courses">
+      <div class="wrap">
+        <div class="section-head"><div class="mini">COURSE</div><h2>코스 안내</h2></div>
+        <div class="course-grid">
+          <article class="course"><div class="icon">泰</div><h3>타이관리</h3><div class="price"><span>60분</span><strong>60,000원</strong></div><div class="price"><span>90분</span><strong>80,000원</strong></div><div class="price"><span>120분</span><strong>100,000원</strong></div></article>
+          <article class="course"><div class="icon">香</div><h3>아로마관리</h3><div class="price"><span>60분</span><strong>70,000원</strong></div><div class="price"><span>90분</span><strong>90,000원</strong></div><div class="price"><span>120분</span><strong>110,000원</strong></div></article>
+          <article class="course"><div class="icon">特</div><h3>스페셜관리</h3><div class="price"><span>60분</span><strong>100,000원</strong></div><div class="price"><span>90분</span><strong>120,000원</strong></div><div class="price"><span>120분</span><strong>140,000원</strong></div></article>
+          <article class="course"><div class="icon">韓</div><h3>한국인관리</h3><div class="price"><span>60분</span><strong>140,000원</strong></div><div class="price"><span>90분</span><strong>180,000원</strong></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block regions" id="regions">
+      <div class="wrap">
+        <div class="section-head"><div class="mini">AREA</div><h2>이용 지역</h2></div>
+        <div class="region-grid">
+          <a class="region" href="/서울/">서울<span>SEOUL</span></a>
+          <a class="region" href="/경기/">경기<span>GYEONGGI</span></a>
+          <a class="region" href="/인천/">인천<span>INCHEON</span></a>
+          <a class="region" href="/천안/">천안<span>CHEONAN</span></a>
+          <a class="region" href="/아산/">아산<span>ASAN</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="map"><div class="wrap"><div class="section-head"><div class="mini">MAP</div><h2>이용 지역 지도</h2></div><div class="map-box"><iframe src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EA%B2%BD%EA%B8%B0%20%EC%9D%B8%EC%B2%9C%20%EC%B2%9C%EC%95%88%20%EC%95%84%EC%82%B0&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="서울 경기 인천 천안 아산 이용 지역 지도"></iframe></div></div></section><section class="guide" id="guide">
+      <div class="wrap">
+        <div class="guide-box">
+          <div><div class="eyebrow">KOREAN BEAUTY THERAPY</div><h2>지역과 시간을 간편하게 확인하세요</h2><p>서울 경기 인천 천안 아산의 세부 지역정보와 관리 코스를 확인할 수 있습니다.</p></div>
+          <a class="bigcall" href="tel:050712803355">0507-1280-3355</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>한국미인테라피　|　서울 · 경기 · 인천 · 천안 · 아산</footer>
+
+  <div class="mobile">
+    <a href="tel:050712803355">전화하기</a>
+    <a href="sms:050712803355?body=한국미인테라피 보고 예약 문의합니다">문자하기</a>
+  </div>
+</body>
+</html>
