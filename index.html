@@ -117,6 +117,68 @@
 <meta property="og:image:height" content="1024">
 <style id="main-map-style">.map-box{border:1px solid #dfc99f;background:#fffdf8;padding:10px;border-radius:6px;box-shadow:0 12px 32px rgba(84,52,30,.06)}.map-box iframe{width:100%;height:360px;border:0;border-radius:4px}</style>
 <meta name="naver-site-verification" content="7b2fbfbd617f7f1b3103c816be6f2cb5067c772e" />
+<style id="kb-course-3col-fix">
+#courses .course-grid,
+#courses .kb-course-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:22px!important;
+  width:100%!important;
+}
+
+#courses .course,
+#courses .kb-course{
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+  height:100%!important;
+}
+
+#courses .kb-course{
+  padding:26px 24px!important;
+}
+
+#courses .kb-course h3{
+  text-align:center!important;
+  margin:8px 0 18px!important;
+  font-size:22px!important;
+  color:#99152d!important;
+}
+
+#courses .kb-course::before{
+  display:block;
+  width:48px;
+  height:48px;
+  margin:0 auto 12px;
+  border-radius:50%;
+  background:#94172f;
+  color:#fff;
+  font-size:22px;
+  line-height:48px;
+  text-align:center;
+  font-weight:700;
+}
+
+#courses .kb-course:nth-child(1)::before{content:"泰";}
+#courses .kb-course:nth-child(2)::before{content:"特";}
+#courses .kb-course:nth-child(3)::before{content:"韓";}
+
+#courses .kb-price{
+  display:flex!important;
+  justify-content:space-between!important;
+  align-items:center!important;
+  padding:13px 4px!important;
+  border-top:1px solid #eadcc5!important;
+}
+
+@media(max-width:760px){
+  #courses .course-grid,
+  #courses .kb-course-grid{
+    grid-template-columns:1fr!important;
+  }
+}
+</style>
 </head>
 <body>
   <header class="topbar">
