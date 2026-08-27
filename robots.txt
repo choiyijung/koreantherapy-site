@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://seoul-hankook-massage.store/sitemap.xml
+Sitemap: https://koreantherapy.shop/sitemap.xml
